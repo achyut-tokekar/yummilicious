@@ -7,8 +7,7 @@ const JwtStrategy = JwtPassport.Strategy;
 const ExtractJwt = JwtPassport.ExtractJwt;
 
 const options = {
-    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: "YummyApp"
+    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken()
 };
 
 export default (passport) => {
